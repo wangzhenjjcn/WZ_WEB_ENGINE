@@ -112,7 +112,6 @@
   {{ 'jquery.scrollbar.min.js' | asset_url | script_tag }}
   
   
-  {% include 'disable-right-click' %}
 </head>
 
 <body class="{% if template == "index" %}index-template{% endif %} {% if customer %}loggedin{% endif %} sarahmarket_3" >
@@ -134,8 +133,7 @@
   <!-- Header -->
   <header id="top" class="header clearfix">
     {% section 'theme-header' %}  
-    {% include 'disable-right-click' %}
-</header>
+  </header>
   <div class="fix-sticky"></div>
 
   <!-- Main Content -->
@@ -202,4 +200,3 @@
   
 </body>
 </html>
-
